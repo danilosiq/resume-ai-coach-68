@@ -2,21 +2,21 @@ import { z } from "zod";
 
 export const TimelineItemSchema = z.object({
   title: z.string().min(1, "Obrigatório"),
-  description: z.string().default(""),
-  startDate: z.string().default(""),
-  endDate: z.string().default(""),
-  current: z.boolean().default(false),
+  description: z.string(),
+  startDate: z.string(),
+  endDate: z.string(),
+  current: z.boolean(),
 });
 
 export const FormSchema = z.object({
   fullName: z.string().min(1, "Informe seu nome"),
   email: z.string().email("Email inválido"),
   phone: z.string().min(1, "Informe um telefone"),
-  link: z.string().default(""),
-  education: z.array(TimelineItemSchema).default([]),
-  experience: z.array(TimelineItemSchema).default([]),
-  jobLink: z.string().default(""),
-  jobDescription: z.string().default(""),
+  link: z.string(),
+  education: z.array(TimelineItemSchema),
+  experience: z.array(TimelineItemSchema),
+  jobLink: z.string(),
+  jobDescription: z.string(),
 });
 
 export type FormValues = z.infer<typeof FormSchema>;
