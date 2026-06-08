@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useServerFn } from "@tanstack/react-start";
 import { useMemo, useState } from "react";
-import { useFieldArray, useForm, type Control, type UseFormRegister } from "react-hook-form";
+import { useFieldArray, useForm, type UseFormRegister } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Plus, Trash2, FileText, Sparkles, Download, Loader2, CheckCircle2, AlertCircle, ListChecks, Lightbulb, BookOpen } from "lucide-react";
 import { FormSchema, type FormValues, type AIResult } from "@/lib/curriculo-types";
@@ -294,17 +294,15 @@ function Field({ label, error, children }: { label: string; error?: string; chil
 }
 
 function ItemList({
-  items, onAdd, onRemove, register, control, name, titleLabel,
+  items, onAdd, onRemove, register, name, titleLabel,
 }: {
   items: { id: string }[];
   onAdd: () => void;
   onRemove: (i: number) => void;
   register: UseFormRegister<FormValues>;
-  control: Control<FormValues>;
   name: "education" | "experience";
   titleLabel: string;
 }) {
-  void control;
   return (
     <div className="space-y-4">
       {items.map((field, i) => (
