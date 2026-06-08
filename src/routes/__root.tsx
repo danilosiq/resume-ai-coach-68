@@ -77,14 +77,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
+      { title: "curriculoIA" },
+      { name: "description", content: "AI-powered app that tailors resumes to specific job openings for career starters and changers." },
       { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { property: "og:title", content: "curriculoIA" },
+      { property: "og:description", content: "AI-powered app that tailors resumes to specific job openings for career starters and changers." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "curriculoIA" },
+      { name: "twitter:description", content: "AI-powered app that tailors resumes to specific job openings for career starters and changers." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/ab514745-5236-489f-adea-8f105b166836/id-preview-3e68ee3b--b7303685-c575-4d07-a087-631f26d1dae6.lovable.app-1780960745702.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/ab514745-5236-489f-adea-8f105b166836/id-preview-3e68ee3b--b7303685-c575-4d07-a087-631f26d1dae6.lovable.app-1780960745702.png" },
     ],
     links: [
       {
