@@ -177,7 +177,7 @@ function Page() {
                 onAdd={() => eduArr.append({ ...emptyItem })}
                 onRemove={(i) => eduArr.remove(i)}
                 register={form.register}
-                control={form.control}
+                
                 name="education"
                 titleLabel="Nome do curso / formação / certificação"
               />
@@ -189,7 +189,7 @@ function Page() {
                 onAdd={() => expArr.append({ ...emptyItem })}
                 onRemove={(i) => expArr.remove(i)}
                 register={form.register}
-                control={form.control}
+                
                 name="experience"
                 titleLabel="Cargo / projeto / experiência"
               />
