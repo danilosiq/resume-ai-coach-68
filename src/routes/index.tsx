@@ -224,7 +224,7 @@ function Page() {
               className="inline-flex w-full items-center justify-center gap-2 rounded-md bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground hover:opacity-90 disabled:opacity-60 md:w-auto"
             >
               {loading ? <Loader2 className="h-4 w-4 animate-spin" /> : <Sparkles className="h-4 w-4" />}
-              {loading ? "Gerando com IA..." : "Gerar currículo com IA"}
+              {loading ? "Gerando com IA..." : "Gerar currículo DEV com IA"}
             </button>
           </form>
 
