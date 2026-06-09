@@ -11,10 +11,10 @@ import { generatePDF } from "@/lib/pdf";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "CurrículoIA — Adapte seu currículo para cada vaga com IA" },
-      { name: "description", content: "Ferramenta de IA para criar e adaptar currículos ATS-friendly para vagas específicas. Ideal para estudantes, estágios, primeira vaga e transição de carreira." },
-      { property: "og:title", content: "CurrículoIA — Currículo adaptado por IA" },
-      { property: "og:description", content: "Adapte seu currículo para cada vaga com IA. ATS-friendly, em segundos." },
+      { title: "CurrículoIA — Currículo DEV para vagas júnior e estágio em tecnologia" },
+      { name: "description", content: "IA que transforma seus projetos acadêmicos, GitHub e portfólio em um currículo DEV ATS-friendly, alinhado à vaga de estágio ou júnior em tecnologia — sem inventar experiências." },
+      { property: "og:title", content: "CurrículoIA — Currículo DEV para estágio e vaga júnior" },
+      { property: "og:description", content: "Adapte seu currículo de desenvolvedor à vaga: stack, projetos acadêmicos, GitHub e portfólio organizados por IA, ATS-friendly e sem invenções." },
     ],
   }),
   component: Page,
@@ -81,7 +81,7 @@ function Page() {
           </div>
           <nav className="hidden text-sm text-topbar-foreground/70 md:flex items-center gap-6">
             <a href="#como-funciona" className="hover:text-topbar-foreground">Como funciona</a>
-            <a href="#publico" className="hover:text-topbar-foreground">Para quem é</a>
+            <a href="#publico" className="hover:text-topbar-foreground">Para devs iniciantes</a>
             <a href="#app" className="rounded-md bg-primary px-3 py-1.5 text-primary-foreground hover:opacity-90">Começar</a>
           </nav>
         </div>
@@ -93,18 +93,20 @@ function Page() {
           <div className="grid gap-10 lg:grid-cols-2 lg:items-center">
             <div>
               <span className="inline-flex items-center gap-2 rounded-full border border-topbar-foreground/15 bg-topbar-foreground/5 px-3 py-1 text-xs text-topbar-foreground/80">
-                <Sparkles className="h-3 w-3" /> Currículo adaptado por IA
+                <Sparkles className="h-3 w-3" /> Currículo DEV adaptado por IA
               </span>
               <h1 className="mt-4 text-4xl font-bold leading-tight tracking-tight md:text-5xl">
-                Adapte seu currículo para <span className="text-primary">cada vaga</span> em segundos.
+                Transforme seus projetos em um <span className="text-primary">currículo DEV</span> pronto para vagas júnior e estágio.
               </h1>
               <p className="mt-4 max-w-xl text-topbar-foreground/70">
-                Feito para estudantes, estágios, primeira vaga e transição de carreira. Geramos um currículo ATS-friendly,
-                com linguagem profissional e foco real na vaga — sem inventar nada.
+                Use IA para adaptar seu currículo à vaga desejada, destacar sua stack, organizar projetos acadêmicos do GitHub e portfólio, e melhorar suas chances em processos seletivos de tecnologia — sem inventar experiências.
+              </p>
+              <p className="mt-3 max-w-xl text-xs text-topbar-foreground/50">
+                Feito para estudantes de ADS, Engenharia de Software, Ciência da Computação, Sistemas de Informação e quem busca estágio, primeira vaga júnior ou transição para tecnologia.
               </p>
               <div className="mt-6 flex flex-wrap gap-3">
                 <a href="#app" className="inline-flex items-center gap-2 rounded-md bg-primary px-5 py-2.5 text-sm font-medium text-primary-foreground hover:opacity-90">
-                  Criar meu currículo <Sparkles className="h-4 w-4" />
+                  Criar meu currículo DEV <Sparkles className="h-4 w-4" />
                 </a>
                 <a href="#como-funciona" className="inline-flex items-center gap-2 rounded-md border border-topbar-foreground/20 px-5 py-2.5 text-sm text-topbar-foreground/90 hover:bg-topbar-foreground/5">
                   Como funciona
@@ -114,7 +116,7 @@ function Page() {
             <div className="rounded-2xl border border-topbar-foreground/10 bg-topbar-foreground/5 p-6 backdrop-blur">
               <div className="flex items-center justify-between text-xs text-topbar-foreground/60">
                 <span>Preview do resultado</span>
-                <span className="rounded-full bg-success/20 px-2 py-0.5 text-success">Score 92%</span>
+                <span className="rounded-full bg-success/20 px-2 py-0.5 text-success">Match com a vaga 92%</span>
               </div>
               <div className="mt-4 rounded-lg bg-white p-5 text-foreground shadow-2xl">
                 <div className="text-xl font-bold">Ana Silva</div>
@@ -122,10 +124,10 @@ function Page() {
                 <div className="mt-1 text-[11px] text-muted-foreground">+55 11 9 9999-0000 • ana@email.com • github.com/ana</div>
                 <div className="mt-4 text-[11px] font-bold uppercase tracking-wider">Summary</div>
                 <div className="h-px bg-border my-1" />
-                <div className="text-xs text-muted-foreground">Estudante de Análise de Sistemas com projetos em React e foco em desenvolver interfaces acessíveis…</div>
-                <div className="mt-3 text-[11px] font-bold uppercase tracking-wider">Skills</div>
+                <div className="text-xs text-muted-foreground">Estudante de Análise e Desenvolvimento de Sistemas com projetos em React, TypeScript e consumo de APIs publicados no GitHub…</div>
+                <div className="mt-3 text-[11px] font-bold uppercase tracking-wider">Stack</div>
                 <div className="h-px bg-border my-1" />
-                <div className="text-xs text-muted-foreground">React • TypeScript • Tailwind • Git • Acessibilidade</div>
+                <div className="text-xs text-muted-foreground">React • TypeScript • Node.js • Git • REST APIs • Tailwind</div>
               </div>
             </div>
           </div>
@@ -141,10 +143,10 @@ function Page() {
               <div className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">Fluxo</div>
               <ol className="mt-4 space-y-3 text-sm">
                 <StepItem n={1} label="Dados pessoais" done={progress >= 1} />
-                <StepItem n={2} label="Estudos" done={progress >= 2} />
-                <StepItem n={3} label="Experiências" done={progress >= 3} />
-                <StepItem n={4} label="Vaga alvo" done={progress >= 4} />
-                <StepItem n={5} label="Análise IA" done={!!result} />
+                <StepItem n={2} label="Formação tech" done={progress >= 2} />
+                <StepItem n={3} label="Projetos & GitHub" done={progress >= 3} />
+                <StepItem n={4} label="Vaga de tecnologia" done={progress >= 4} />
+                <StepItem n={5} label="Análise da IA" done={!!result} />
               </ol>
               <div className="mt-5 rounded-md bg-muted p-3 text-xs text-muted-foreground">
                 Não criamos conta, não salvamos histórico. Seus dados ficam no seu navegador.
@@ -166,12 +168,12 @@ function Page() {
                   <input {...form.register("phone")} className="input" placeholder="+55 11 9 9999-9999" />
                 </Field>
                 <Field label="Link adicional (LinkedIn, GitHub, portfólio)">
-                  <input {...form.register("link")} className="input" placeholder="https://..." />
+                  <input {...form.register("link")} className="input" placeholder="LinkedIn, GitHub ou portfólio" />
                 </Field>
               </div>
             </Section>
 
-            <Section title="Estudos e certificações" icon={<BookOpen className="h-4 w-4" />}>
+            <Section title="Formação e cursos de tecnologia" icon={<BookOpen className="h-4 w-4" />}>
               <ItemList
                 items={eduArr.fields}
                 onAdd={() => eduArr.append({ ...emptyItem })}
@@ -179,11 +181,11 @@ function Page() {
                 register={form.register}
                 
                 name="education"
-                titleLabel="Nome do curso / formação / certificação"
+                titleLabel="Curso, graduação, bootcamp ou certificação (ex: ADS, Engenharia de Software, AWS, Scrum)"
               />
             </Section>
 
-            <Section title="Experiências e projetos" icon={<ListChecks className="h-4 w-4" />}>
+            <Section title="Projetos, experiências e GitHub" icon={<ListChecks className="h-4 w-4" />}>
               <ItemList
                 items={expArr.fields}
                 onAdd={() => expArr.append({ ...emptyItem })}
@@ -191,20 +193,20 @@ function Page() {
                 register={form.register}
                 
                 name="experience"
-                titleLabel="Cargo / projeto / experiência"
+                titleLabel="Projeto acadêmico, repositório no GitHub, estágio ou experiência prática"
               />
             </Section>
 
-            <Section title="Vaga alvo" icon={<Sparkles className="h-4 w-4" />}>
+            <Section title="Vaga de tecnologia" icon={<Sparkles className="h-4 w-4" />}>
               <div className="space-y-4">
-                <Field label="Link da vaga no LinkedIn">
+                <Field label="Link da vaga no LinkedIn (Dev Júnior, Estágio, QA, Suporte, etc.)">
                   <input {...form.register("jobLink")} className="input" placeholder="https://www.linkedin.com/jobs/view/..." />
                 </Field>
-                <Field label="Descrição da vaga (cole aqui se preferir, ou se o link não puder ser lido)">
-                  <textarea {...form.register("jobDescription")} className="input min-h-[140px]" placeholder="Cole a descrição completa da vaga aqui..." />
+                <Field label="Descrição da vaga">
+                  <textarea {...form.register("jobDescription")} className="input min-h-[140px]" placeholder="Cole aqui a descrição da vaga de estágio, júnior ou trainee em tecnologia" />
                 </Field>
                 <p className="text-xs text-muted-foreground">
-                  Não conseguimos ler links do LinkedIn automaticamente (eles bloqueiam acesso). Cole a descrição da vaga para obter o melhor resultado.
+                  Não conseguimos ler links do LinkedIn automaticamente (eles bloqueiam acesso). Cole a descrição da vaga — incluindo a stack e requisitos — para a IA alinhar seu currículo de forma ATS-friendly.
                 </p>
               </div>
             </Section>
@@ -222,7 +224,7 @@ function Page() {
               className="inline-flex w-full items-center justify-center gap-2 rounded-md bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground hover:opacity-90 disabled:opacity-60 md:w-auto"
             >
               {loading ? <Loader2 className="h-4 w-4 animate-spin" /> : <Sparkles className="h-4 w-4" />}
-              {loading ? "Gerando com IA..." : "Gerar currículo com IA"}
+              {loading ? "Gerando com IA..." : "Gerar currículo DEV com IA"}
             </button>
           </form>
 
@@ -235,7 +237,7 @@ function Page() {
 
       <footer className="border-t bg-card/50">
         <div className="mx-auto max-w-7xl px-6 py-6 text-center text-xs text-muted-foreground">
-          CurrículoIA — feito para quem está construindo carreira. Os dados não são salvos.
+          CurrículoIA — feito para devs iniciantes, estudantes de tecnologia e candidatos a estágio. Não salvamos seus dados.
         </div>
       </footer>
 
@@ -319,8 +321,8 @@ function ItemList({
             <Field label={titleLabel}>
               <input {...register(`${name}.${i}.title` as const)} className="input" />
             </Field>
-            <Field label="Descrição (será adaptada pela IA)">
-              <textarea {...register(`${name}.${i}.description` as const)} className="input min-h-[80px]" placeholder="Descreva o que fez, ferramentas usadas, resultados ou aprendizados..." />
+            <Field label="Descrição (a IA vai reescrever no formato XYZ, sem inventar)">
+              <textarea {...register(`${name}.${i}.description` as const)} className="input min-h-[80px]" placeholder={name === "experience" ? "Ex: Projeto em React com consumo de API, autenticação, dashboard e deploy" : "Ex: Análise e Desenvolvimento de Sistemas — disciplinas de POO, banco de dados, web e cloud"} />
             </Field>
             <div className="grid gap-3 md:grid-cols-3">
               <Field label="Início">
