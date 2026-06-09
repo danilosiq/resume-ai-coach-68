@@ -81,7 +81,7 @@ function Page() {
           </div>
           <nav className="hidden text-sm text-topbar-foreground/70 md:flex items-center gap-6">
             <a href="#como-funciona" className="hover:text-topbar-foreground">Como funciona</a>
-            <a href="#publico" className="hover:text-topbar-foreground">Para quem é</a>
+            <a href="#publico" className="hover:text-topbar-foreground">Para devs iniciantes</a>
             <a href="#app" className="rounded-md bg-primary px-3 py-1.5 text-primary-foreground hover:opacity-90">Começar</a>
           </nav>
         </div>
@@ -93,18 +93,20 @@ function Page() {
           <div className="grid gap-10 lg:grid-cols-2 lg:items-center">
             <div>
               <span className="inline-flex items-center gap-2 rounded-full border border-topbar-foreground/15 bg-topbar-foreground/5 px-3 py-1 text-xs text-topbar-foreground/80">
-                <Sparkles className="h-3 w-3" /> Currículo adaptado por IA
+                <Sparkles className="h-3 w-3" /> Currículo DEV adaptado por IA
               </span>
               <h1 className="mt-4 text-4xl font-bold leading-tight tracking-tight md:text-5xl">
-                Adapte seu currículo para <span className="text-primary">cada vaga</span> em segundos.
+                Transforme seus projetos em um <span className="text-primary">currículo DEV</span> pronto para vagas júnior e estágio.
               </h1>
               <p className="mt-4 max-w-xl text-topbar-foreground/70">
-                Feito para estudantes, estágios, primeira vaga e transição de carreira. Geramos um currículo ATS-friendly,
-                com linguagem profissional e foco real na vaga — sem inventar nada.
+                Use IA para adaptar seu currículo à vaga desejada, destacar sua stack, organizar projetos acadêmicos do GitHub e portfólio, e melhorar suas chances em processos seletivos de tecnologia — sem inventar experiências.
+              </p>
+              <p className="mt-3 max-w-xl text-xs text-topbar-foreground/50">
+                Feito para estudantes de ADS, Engenharia de Software, Ciência da Computação, Sistemas de Informação e quem busca estágio, primeira vaga júnior ou transição para tecnologia.
               </p>
               <div className="mt-6 flex flex-wrap gap-3">
                 <a href="#app" className="inline-flex items-center gap-2 rounded-md bg-primary px-5 py-2.5 text-sm font-medium text-primary-foreground hover:opacity-90">
-                  Criar meu currículo <Sparkles className="h-4 w-4" />
+                  Criar meu currículo DEV <Sparkles className="h-4 w-4" />
                 </a>
                 <a href="#como-funciona" className="inline-flex items-center gap-2 rounded-md border border-topbar-foreground/20 px-5 py-2.5 text-sm text-topbar-foreground/90 hover:bg-topbar-foreground/5">
                   Como funciona
@@ -114,7 +116,7 @@ function Page() {
             <div className="rounded-2xl border border-topbar-foreground/10 bg-topbar-foreground/5 p-6 backdrop-blur">
               <div className="flex items-center justify-between text-xs text-topbar-foreground/60">
                 <span>Preview do resultado</span>
-                <span className="rounded-full bg-success/20 px-2 py-0.5 text-success">Score 92%</span>
+                <span className="rounded-full bg-success/20 px-2 py-0.5 text-success">Match com a vaga 92%</span>
               </div>
               <div className="mt-4 rounded-lg bg-white p-5 text-foreground shadow-2xl">
                 <div className="text-xl font-bold">Ana Silva</div>
@@ -122,10 +124,10 @@ function Page() {
                 <div className="mt-1 text-[11px] text-muted-foreground">+55 11 9 9999-0000 • ana@email.com • github.com/ana</div>
                 <div className="mt-4 text-[11px] font-bold uppercase tracking-wider">Summary</div>
                 <div className="h-px bg-border my-1" />
-                <div className="text-xs text-muted-foreground">Estudante de Análise de Sistemas com projetos em React e foco em desenvolver interfaces acessíveis…</div>
-                <div className="mt-3 text-[11px] font-bold uppercase tracking-wider">Skills</div>
+                <div className="text-xs text-muted-foreground">Estudante de Análise e Desenvolvimento de Sistemas com projetos em React, TypeScript e consumo de APIs publicados no GitHub…</div>
+                <div className="mt-3 text-[11px] font-bold uppercase tracking-wider">Stack</div>
                 <div className="h-px bg-border my-1" />
-                <div className="text-xs text-muted-foreground">React • TypeScript • Tailwind • Git • Acessibilidade</div>
+                <div className="text-xs text-muted-foreground">React • TypeScript • Node.js • Git • REST APIs • Tailwind</div>
               </div>
             </div>
           </div>
