@@ -321,8 +321,8 @@ function ItemList({
             <Field label={titleLabel}>
               <input {...register(`${name}.${i}.title` as const)} className="input" />
             </Field>
-            <Field label="Descrição (será adaptada pela IA)">
-              <textarea {...register(`${name}.${i}.description` as const)} className="input min-h-[80px]" placeholder="Descreva o que fez, ferramentas usadas, resultados ou aprendizados..." />
+            <Field label="Descrição (a IA vai reescrever no formato XYZ, sem inventar)">
+              <textarea {...register(`${name}.${i}.description` as const)} className="input min-h-[80px]" placeholder={name === "experience" ? "Ex: Projeto em React com consumo de API, autenticação, dashboard e deploy" : "Ex: Análise e Desenvolvimento de Sistemas — disciplinas de POO, banco de dados, web e cloud"} />
             </Field>
             <div className="grid gap-3 md:grid-cols-3">
               <Field label="Início">
