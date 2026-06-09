@@ -168,12 +168,12 @@ function Page() {
                   <input {...form.register("phone")} className="input" placeholder="+55 11 9 9999-9999" />
                 </Field>
                 <Field label="Link adicional (LinkedIn, GitHub, portfólio)">
-                  <input {...form.register("link")} className="input" placeholder="https://..." />
+                  <input {...form.register("link")} className="input" placeholder="LinkedIn, GitHub ou portfólio" />
                 </Field>
               </div>
             </Section>
 
-            <Section title="Estudos e certificações" icon={<BookOpen className="h-4 w-4" />}>
+            <Section title="Formação e cursos de tecnologia" icon={<BookOpen className="h-4 w-4" />}>
               <ItemList
                 items={eduArr.fields}
                 onAdd={() => eduArr.append({ ...emptyItem })}
@@ -181,11 +181,11 @@ function Page() {
                 register={form.register}
                 
                 name="education"
-                titleLabel="Nome do curso / formação / certificação"
+                titleLabel="Curso, graduação, bootcamp ou certificação (ex: ADS, Engenharia de Software, AWS, Scrum)"
               />
             </Section>
 
-            <Section title="Experiências e projetos" icon={<ListChecks className="h-4 w-4" />}>
+            <Section title="Projetos, experiências e GitHub" icon={<ListChecks className="h-4 w-4" />}>
               <ItemList
                 items={expArr.fields}
                 onAdd={() => expArr.append({ ...emptyItem })}
@@ -193,20 +193,20 @@ function Page() {
                 register={form.register}
                 
                 name="experience"
-                titleLabel="Cargo / projeto / experiência"
+                titleLabel="Projeto acadêmico, repositório no GitHub, estágio ou experiência prática"
               />
             </Section>
 
-            <Section title="Vaga alvo" icon={<Sparkles className="h-4 w-4" />}>
+            <Section title="Vaga de tecnologia" icon={<Sparkles className="h-4 w-4" />}>
               <div className="space-y-4">
-                <Field label="Link da vaga no LinkedIn">
+                <Field label="Link da vaga no LinkedIn (Dev Júnior, Estágio, QA, Suporte, etc.)">
                   <input {...form.register("jobLink")} className="input" placeholder="https://www.linkedin.com/jobs/view/..." />
                 </Field>
-                <Field label="Descrição da vaga (cole aqui se preferir, ou se o link não puder ser lido)">
-                  <textarea {...form.register("jobDescription")} className="input min-h-[140px]" placeholder="Cole a descrição completa da vaga aqui..." />
+                <Field label="Descrição da vaga">
+                  <textarea {...form.register("jobDescription")} className="input min-h-[140px]" placeholder="Cole aqui a descrição da vaga de estágio, júnior ou trainee em tecnologia" />
                 </Field>
                 <p className="text-xs text-muted-foreground">
-                  Não conseguimos ler links do LinkedIn automaticamente (eles bloqueiam acesso). Cole a descrição da vaga para obter o melhor resultado.
+                  Não conseguimos ler links do LinkedIn automaticamente (eles bloqueiam acesso). Cole a descrição da vaga — incluindo a stack e requisitos — para a IA alinhar seu currículo de forma ATS-friendly.
                 </p>
               </div>
             </Section>
