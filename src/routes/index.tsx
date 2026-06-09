@@ -11,10 +11,10 @@ import { generatePDF } from "@/lib/pdf";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "CurrículoIA — Adapte seu currículo para cada vaga com IA" },
-      { name: "description", content: "Ferramenta de IA para criar e adaptar currículos ATS-friendly para vagas específicas. Ideal para estudantes, estágios, primeira vaga e transição de carreira." },
-      { property: "og:title", content: "CurrículoIA — Currículo adaptado por IA" },
-      { property: "og:description", content: "Adapte seu currículo para cada vaga com IA. ATS-friendly, em segundos." },
+      { title: "CurrículoIA — Currículo DEV para vagas júnior e estágio em tecnologia" },
+      { name: "description", content: "IA que transforma seus projetos acadêmicos, GitHub e portfólio em um currículo DEV ATS-friendly, alinhado à vaga de estágio ou júnior em tecnologia — sem inventar experiências." },
+      { property: "og:title", content: "CurrículoIA — Currículo DEV para estágio e vaga júnior" },
+      { property: "og:description", content: "Adapte seu currículo de desenvolvedor à vaga: stack, projetos acadêmicos, GitHub e portfólio organizados por IA, ATS-friendly e sem invenções." },
     ],
   }),
   component: Page,
