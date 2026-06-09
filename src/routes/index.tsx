@@ -143,10 +143,10 @@ function Page() {
               <div className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">Fluxo</div>
               <ol className="mt-4 space-y-3 text-sm">
                 <StepItem n={1} label="Dados pessoais" done={progress >= 1} />
-                <StepItem n={2} label="Estudos" done={progress >= 2} />
-                <StepItem n={3} label="Experiências" done={progress >= 3} />
-                <StepItem n={4} label="Vaga alvo" done={progress >= 4} />
-                <StepItem n={5} label="Análise IA" done={!!result} />
+                <StepItem n={2} label="Formação tech" done={progress >= 2} />
+                <StepItem n={3} label="Projetos & GitHub" done={progress >= 3} />
+                <StepItem n={4} label="Vaga de tecnologia" done={progress >= 4} />
+                <StepItem n={5} label="Análise da IA" done={!!result} />
               </ol>
               <div className="mt-5 rounded-md bg-muted p-3 text-xs text-muted-foreground">
                 Não criamos conta, não salvamos histórico. Seus dados ficam no seu navegador.
