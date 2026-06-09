@@ -237,7 +237,7 @@ function Page() {
 
       <footer className="border-t bg-card/50">
         <div className="mx-auto max-w-7xl px-6 py-6 text-center text-xs text-muted-foreground">
-          CurrículoIA — feito para quem está construindo carreira. Os dados não são salvos.
+          CurrículoIA — feito para devs iniciantes, estudantes de tecnologia e candidatos a estágio. Não salvamos seus dados.
         </div>
       </footer>
 
